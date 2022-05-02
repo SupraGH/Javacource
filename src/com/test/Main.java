@@ -1,7 +1,9 @@
 package com.test;
 import java.sql.Array;
 import java.sql.SQLOutput;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
@@ -219,7 +221,7 @@ public class Main {
          */
 
         // Массивы данных, одномерные и многомерные
-
+        /*
         char[] stroka;
         int number[]; //no fault
         int[] nums = new int[10];
@@ -227,6 +229,8 @@ public class Main {
         int[] arr =  new int[] {9,3,6,4,5}; //обьявление и заполнение массива
         int[] arr_new = Arrays.copyOf(arr, arr.length); //копирование массива в новый массив
         System.out.println("Massive lenght: " + arr.length);
+
+         */
 
         //найти в массиве найбольший элемент
         //первый вариант
@@ -245,8 +249,10 @@ public class Main {
         }
         System.out.println("  beggest element :" + var);
          */
+
         //второй вариант
 
+        /*
         int var = arr[0];
         for (int i = 0; i < arr.length; i++)
             {
@@ -272,6 +278,29 @@ public class Main {
         num [1][1] = 69;
         System.out.println(num [1][1]);
         System.out.println(num [1][0]);
+
+         */
+        //Collection Java Framework (Коллекции)
+        ArrayList<Integer> number = new ArrayList<>();
+        LinkedList<Integer> numbers = new LinkedList<>();
+        number.add(1);
+        number.add(5);
+        number.add(10);
+        number.add(number.size());
+        numbers.add(121);
+        numbers.add(122);
+        numbers.add(123);
+        numbers.add(124);
+        numbers.addFirst(120);
+        numbers.addFirst(numbers.getLast() );
+
+        // перебираем елементы коллекции с помощью цикла
+        for(Integer el : number){
+            System.out.println(el);
+        }
+        for(Integer els : numbers){
+            System.out.println(els);
+        }
     }
 }
 
