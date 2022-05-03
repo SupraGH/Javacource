@@ -278,9 +278,10 @@ public class Main {
         num [1][1] = 69;
         System.out.println(num [1][1]);
         System.out.println(num [1][0]);
-
          */
+
         //Collection Java Framework (Коллекции)
+        /*
         ArrayList<Integer> number = new ArrayList<>();
         LinkedList<Integer> numbers = new LinkedList<>();
         number.add(1);
@@ -301,7 +302,63 @@ public class Main {
         for(Integer els : numbers){
             System.out.println(els);
         }
+         */
+
+        //Function (Функции Методы)
+        /*
+        test();
+        test();
+        test1("hELLOY");
+        String java = "java";
+        info(java);
+        info("");
+         */
+
+        /*
+        int result1 = summa((short) 5,(short) 7);
+        short num = 8;
+        int result2 = summa((short) 5, num);
+        info(String.valueOf(result2));
+        byte[] nums1 = new byte[] {1,3,5};
+        int summ1 = summaArray(nums1);
+        System.out.println("Summa 1: " + summ1);
+
+         */
+        // Основы ООП Урок 11
+
+
     }
+    // Записываем методы в не функций
+    //Функции которые не возвращают результат
+    public static void summa1(short a,short b){
+        int res = a + b;
+        String result = "Result " + res;
+        info(result);
+    }
+    public static void test(){
+        System.out.println("Output TXT");
+    }
+    public static void info(String word) {
+        System.out.print(word);
+        System.out.println("!");
+    }
+    //Функции которые  возвращают результат
+    public static int summa(short a,short b) {
+        int res = a + b;
+        String result = "Result " + res;
+        info(result);
+        return res;
+    }
+
+    //Методы в Java - функция сложения елементов массива
+    public static int summaArray(byte[] arr) {
+        int summa = 0;
+        for (byte i = 0; i < arr.length; i++){
+                summa += arr[i];
+        }
+        return summa;
+    }
+
 }
 
 
