@@ -325,11 +325,31 @@ public class Main {
 
          */
         // Основы ООП Урок 11
+//        полиморфизм - переодределение данных, наследование
+//        абстракция - описание лишь скелета объекта без реализации
+//        инкапсуляция -  защита данных от внешнего доступа к ним
+//        наследование - возможность наследовать данные из классов-родителей
+            Transport bmw = new Transport();
+            bmw.setValues(250.5f,2500, "White", new byte[] {0,0,0});
+            String res1 = bmw.getValues();
+            System.out.println(res1);
+//            bmw.speed = 250.5f;
+//            bmw.weigth = 2500;
+//            bmw.color = "White";
+//            bmw.coordinate = new byte[] {0,0,0};
 
-
+            Transport truck = new Transport();
+            truck.speed = 100.5f;
+            truck.weigth = 5500;
+            truck.color = "Red";
+            truck.coordinate = new byte[] {100,0,100};
+            String res2 = truck.getValues();
+            System.out.println(res2);
+     //   System.out.println("truck speed = " + truck.speed + " BMV speed = " + bmw.speed);
     }
     // Записываем методы в не функций
     //Функции которые не возвращают результат
+    /*
     public static void summa1(short a,short b){
         int res = a + b;
         String result = "Result " + res;
@@ -358,6 +378,7 @@ public class Main {
         }
         return summa;
     }
+     */
 
 }
 
